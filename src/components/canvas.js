@@ -68,7 +68,9 @@ class Canvas extends Component {
       <div>
         <ActionButton text='Clear Canvas' onClick={this.clearCanvas.bind(this)} />
         <ActionButton text='Random Art' onClick={this.randomArt.bind(this)} />
-        <ActionButton text='Gallery' onClick={this.gallery.bind(this)} />
+        <a href='/gallery.html'>
+          <ActionButton text='Gallery' onClick={this.gallery.bind(this)} />
+        </a>
         <div id='svg-area'>
           <svg className='border' id='main-svg' dangerouslySetInnerHTML={{ __html: this.state.art }} />
         </div>
