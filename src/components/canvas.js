@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ActionButton from './action-button.js'
 import ShapeCreator from './shape-creator.js'
+import RandomnessSlider from './randomness-slider.js'
 import { circleHtml } from './generate-shapes/circle-html.js'
 import { rectangleHtml } from './generate-shapes/rectangle-html.js'
 import { lineHtml } from './generate-shapes/line-html.js'
@@ -11,7 +12,8 @@ class Canvas extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      art: this.props.initialArt
+      art: this.props.initialArt,
+      randomness: '50'
     }
   }
 
@@ -63,6 +65,13 @@ class Canvas extends Component {
     })
   }
 
+  // setRandomness () {
+  //   this.setState({
+  //     randomness: '50'
+  //   })
+  //   console.log(this.state.randomness)
+  // }
+
   render () {
     return (
       <div>
@@ -83,6 +92,8 @@ class Canvas extends Component {
             <div id='question-mark' />
           </div>
         </div>
+        <h1>Randomness</h1>
+        <RandomnessSlider />
       </div>
     )
   }
