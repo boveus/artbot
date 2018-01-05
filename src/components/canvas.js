@@ -3,6 +3,7 @@ import ActionButton from './action-button.js'
 import ShapeCreator from './shape-creator.js'
 import RandomnessSlider from './randomness-slider.js'
 import ViewportShapeDropdown from './viewport-shape-dropdown.js'
+import AnimatedCheckbox from './animated-checkbox.js'
 import { circleHtml } from './generate-shapes/circle-html.js'
 import { rectangleHtml } from './generate-shapes/rectangle-html.js'
 import { lineHtml } from './generate-shapes/line-html.js'
@@ -15,7 +16,8 @@ class Canvas extends Component {
     this.state = {
       art: this.props.initialArt,
       randomness: '50',
-      viewport: 'rectangle'
+      viewport: 'rectangle',
+      animation: ''
     }
   }
 
@@ -79,6 +81,12 @@ class Canvas extends Component {
     })
   }
 
+  setAnimationState (event) {
+    this.setState({
+      animation: event.target.checked
+    })
+  }
+
   render () {
     return (
       <div>
@@ -87,6 +95,7 @@ class Canvas extends Component {
         <a href='/gallery.html'>
           <ActionButton text='Gallery' onClick={this.gallery.bind(this)} />
         </a>
+        <AnimatedCheckbox passBack={this.setAnimationState.bind(this)} />
         <div className='slidecontainer'>
           <h3>Randomness</h3>
           <RandomnessSlider passBack={this.setRandomness.bind(this)} />
