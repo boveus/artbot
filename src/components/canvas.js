@@ -65,12 +65,9 @@ class Canvas extends Component {
     })
   }
 
-  // setRandomness () {
-  //   this.setState({
-  //     randomness: '50'
-  //   })
-  //   console.log(this.state.randomness)
-  // }
+  setRandomness () {
+    // console.log('test')
+  }
 
   render () {
     return (
@@ -93,7 +90,9 @@ class Canvas extends Component {
           </div>
         </div>
         <h1>Randomness</h1>
-        <RandomnessSlider />
+        // <div className='slidecontainer'>
+          <RandomnessSlider slider={input => console.log('value', input)} />
+        // </div>
       </div>
     )
   }
