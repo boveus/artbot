@@ -5,8 +5,8 @@ class AnimatedCheckbox extends Component {
     return (
       <section title='.checkbox'>
         <div className='checkbox'>
-          <label htmlFor='checkbox' />
           <input type='checkbox' value='None' id='checkbox' name='check' onChange={this.props.passBack} />
+          <label htmlFor='checkbox' />
         </div>
       </section>
     )
