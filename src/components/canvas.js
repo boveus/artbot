@@ -83,12 +83,12 @@ class Canvas extends Component {
           <svg className='border' id='main-svg' dangerouslySetInnerHTML={{ __html: this.state.art }} />
         </div>
         <div className='container'>
-          <ShapeCreator onClick={this.addCircle.bind(this)} shape="<circle cx='25' cy='25' r='25' />" />
-          <ShapeCreator onClick={this.addRectangle.bind(this)} shape="<rect width='50' height='40' />" />
+          <ShapeCreator onClick={this.addCircle.bind(this)} shape="<circle cx='40' cy='40' r='40' />" />
+          <ShapeCreator onClick={this.addRectangle.bind(this)} shape="<rect y='10' width='90' height='60' />" />
           <ShapeCreator onClick={this.addLine.bind(this)} shape="<line x1='20' y1='60' x2='60' y2='20' stroke-width='6' stroke='black' />" />
           <ShapeCreator onClick={this.addPolyline.bind(this)} shape="<polyline points='20,20 40,25 60,40 40,60' fill='none' stroke='black' stroke-width='5' />" />
-          <div onClick={this.addSingleRandomShape.bind(this)}>
-            <div id='question-mark' />
+          <div onClick={this.addSingleRandomShape.bind(this)} id='question-mark' >
+            <div />
           </div>
         </div>
         <h1>Randomness</h1>

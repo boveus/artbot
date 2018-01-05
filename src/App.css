@@ -26,8 +26,8 @@
 
 #question-mark {
   background-image: url('../src/question_mark.svg');
-  width: 55px;
-  height: 70px;
+  width: 120px;
+  height: 155px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -37,7 +37,7 @@
   margin-top: 2%;
   margin-left: 2%;
   display: grid;
-  grid-template-columns: 13% 13% 13% 13% 13%;
+  grid-template-columns: 12% 12% 12% 12% 12%;
   grid-gap: 10%;
   background-color: #fff;
   color: #444;

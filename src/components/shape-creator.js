@@ -4,7 +4,7 @@ class ShapeCreator extends Component {
   render () {
     return (
       <div onClick={this.props.onClick}>
-        <svg dangerouslySetInnerHTML={{ __html: this.props.shape }} />
+        <svg dangerouslySetInnerHTML={{ __html: this.props.shape }} viewBox='0 0 90 90' />
       </div>
     )
   }
