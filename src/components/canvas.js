@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ActionButton from './action-button.js'
 import ShapeCreator from './shape-creator.js'
 import RandomnessSlider from './randomness-slider.js'
+import ViewportShapeDropdown from './viewport-shape-dropdown.js'
 import { circleHtml } from './generate-shapes/circle-html.js'
 import { rectangleHtml } from './generate-shapes/rectangle-html.js'
 import { lineHtml } from './generate-shapes/line-html.js'
@@ -13,7 +14,8 @@ class Canvas extends Component {
     super(props)
     this.state = {
       art: this.props.initialArt,
-      randomness: '50'
+      randomness: '50',
+      viewport: 'rectangle'
     }
   }
 
@@ -71,6 +73,12 @@ class Canvas extends Component {
     })
   }
 
+  setViewport (event) {
+    this.setState({
+      viewport: event.target.value
+    })
+  }
+
   render () {
     return (
       <div>
@@ -79,8 +87,13 @@ class Canvas extends Component {
         <a href='/gallery.html'>
           <ActionButton text='Gallery' onClick={this.gallery.bind(this)} />
         </a>
-        <div id='svg-area'>
-          <svg className='border' id='main-svg' dangerouslySetInnerHTML={{ __html: this.state.art }} />
+        <div className='slidecontainer'>
+          <h3>Randomness</h3>
+          <RandomnessSlider passBack={this.setRandomness.bind(this)} />
+        </div>
+        <ViewportShapeDropdown passBack={this.setViewport.bind(this)} />
+        <div id='svg-area' className={this.state.viewport} >
+          <svg className={this.state.viewport + ' border'} id='main-svg' dangerouslySetInnerHTML={{ __html: this.state.art }} />
         </div>
         <div className='container'>
           <ShapeCreator onClick={this.addCircle.bind(this)} shape="<circle cx='40' cy='40' r='40' />" />
@@ -91,10 +104,7 @@ class Canvas extends Component {
             <div />
           </div>
         </div>
-        <h1>Randomness</h1>
-        <div className='slidecontainer'>
-          <RandomnessSlider passBack={this.setRandomness.bind(this)} />
-        </div>
+
       </div>
     )
   }
