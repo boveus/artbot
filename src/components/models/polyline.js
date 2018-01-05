@@ -7,7 +7,7 @@
      this.stroke = getRandomRgb()
      this.stroke_width = Math.floor(Math.random() * 5) + 1
      this.fill = 'none'
-     // this.opacity = Math.random()
+     this.opacity = Math.random()
    }
 }
 

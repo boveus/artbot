@@ -20,8 +20,7 @@ class RandomnessSlider extends Component {
         type='range'
         min='1'
         max='100'
-        onChange={console.log('slider')}
-        ref={this.props.slider}
+        onChange={this.props.passBack}
      />
 
     )
