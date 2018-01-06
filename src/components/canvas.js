@@ -95,7 +95,10 @@ class Canvas extends Component {
         <a href='/gallery.html'>
           <ActionButton text='Gallery' onClick={this.gallery.bind(this)} />
         </a>
-        <AnimatedCheckbox passBack={this.setAnimationState.bind(this)} />
+        <div className='slidecontainer'>
+          <h3> Animation </h3>
+          <AnimatedCheckbox passBack={this.setAnimationState.bind(this)} />
+        </div>
         <div className='slidecontainer'>
           <h3>Randomness</h3>
           <RandomnessSlider passBack={this.setRandomness.bind(this)} />
