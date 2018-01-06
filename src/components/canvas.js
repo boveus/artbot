@@ -44,7 +44,7 @@ class Canvas extends Component {
 
   addRectangle () {
     this.setState({
-      art: this.state.art + rectangleHtml()
+      art: this.state.art + rectangleHtml(this.state.randomness, this.state.animation)
     })
   }
 

@@ -1,7 +1,7 @@
 import { Rectangle } from '../models/rectangle.js'
 
-function rectangleHtml () {
-  let rectangle = new Rectangle()
+function rectangleHtml (randomness, animation) {
+  let rectangle = new Rectangle(randomness, animation)
   let html = '<rect '
   html += `x='${rectangle.x}' y='${rectangle.y}' height='${rectangle.height}' width='${rectangle.width}' stroke='${rectangle.stroke}'`
   html += ` stroke-width='${rectangle.stroke_width}' fill='${rectangle.fill}' opacity='${rectangle.opacity}'>`
