@@ -92,7 +92,7 @@ class Canvas extends Component {
       <div>
         <ActionButton text='Clear Canvas' onClick={this.clearCanvas.bind(this)} />
         <ActionButton text='Random Art' onClick={this.randomArt.bind(this)} />
-        <a href='artbot/gallery.html'>
+        <a href='/gallery.html'>
           <ActionButton text='Gallery' onClick={this.gallery.bind(this)} />
         </a>
         <div className='slidecontainer'>
