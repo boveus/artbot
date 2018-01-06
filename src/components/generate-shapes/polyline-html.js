@@ -1,7 +1,7 @@
 import { Polyline } from '../models/polyline.js'
 
-function polylineHtml () {
-  let polyline = new Polyline()
+function polylineHtml (randomness, animated) {
+  let polyline = new Polyline(randomness, animated)
   let html = '<polyline '
   html += `points='${polyline.points}' stroke='${polyline.stroke}'`
   html += ` stroke-width='${polyline.stroke_width}' fill='${polyline.fill}' opacity='${polyline.opacity}'>`

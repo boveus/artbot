@@ -56,7 +56,7 @@ class Canvas extends Component {
 
   addPolyline () {
     this.setState({
-      art: this.state.art + polylineHtml()
+      art: this.state.art + polylineHtml(this.state.randomness, this.state.animation)
     })
   }
 
