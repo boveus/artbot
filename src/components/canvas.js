@@ -38,7 +38,7 @@ class Canvas extends Component {
 
   addCircle () {
     this.setState({
-      art: this.state.art + circleHtml()
+      art: this.state.art + circleHtml(this.state.randomness, this.state.animation)
     })
   }
 
@@ -50,7 +50,7 @@ class Canvas extends Component {
 
   addLine () {
     this.setState({
-      art: this.state.art + lineHtml()
+      art: this.state.art + lineHtml(this.state.randomness, this.state.animation)
     })
   }
 

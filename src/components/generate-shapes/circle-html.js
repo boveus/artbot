@@ -1,7 +1,7 @@
 import { Circle } from '../models/circle.js'
 
-function circleHtml () {
-  let circle = new Circle()
+function circleHtml (randomness, animated) {
+  let circle = new Circle(randomness, animated)
   let html = '<circle '
   html += `cx='${circle.x}' cy='${circle.y}' r='${circle.radius}' stroke='${circle.stroke}'`
   html += ` stroke-width='${circle.stroke_width}' fill='${circle.fill}' opacity='${circle.opacity}'>`
