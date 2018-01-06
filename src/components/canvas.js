@@ -32,7 +32,7 @@ class Canvas extends Component {
 
   randomArt () {
     this.setState({
-      art: this.state.art + randomArt()
+      art: this.state.art + randomArt(this.state.randomness, this.state.animation)
     })
   }
 
