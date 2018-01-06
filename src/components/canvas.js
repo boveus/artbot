@@ -61,7 +61,10 @@ class Canvas extends Component {
   }
 
   addSingleRandomShape () {
-    let shapeArray = [polylineHtml(), lineHtml(), rectangleHtml(), circleHtml()]
+    let shapeArray = [polylineHtml(this.state.randomness, this.state.animation),
+      lineHtml(this.state.randomness, this.state.animation),
+      rectangleHtml(this.state.randomness, this.state.animation),
+      circleHtml(this.state.randomness, this.state.animation)]
     let randomNumber = Math.floor(Math.random() * shapeArray.length)
     let shape = shapeArray[randomNumber]
     this.setState({
