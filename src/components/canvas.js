@@ -90,18 +90,21 @@ class Canvas extends Component {
   render () {
     return (
       <div>
-        <ActionButton text='Clear Canvas' onClick={this.clearCanvas.bind(this)} />
-        <ActionButton text='Random Art' onClick={this.randomArt.bind(this)} />
-        <a href='gallery.html'>
-          <ActionButton text='Gallery' onClick={this.gallery.bind(this)} />
-        </a>
-        <div className='slidecontainer'>
-          <h3> Animation </h3>
-          <AnimatedCheckbox passBack={this.setAnimationState.bind(this)} />
-        </div>
-        <div className='slidecontainer'>
-          <h3>Randomness</h3>
-          <RandomnessSlider passBack={this.setRandomness.bind(this)} />
+        <div className='topcontainer'>
+          <div className='centered'>
+            <ActionButton text='Clear Canvas' onClick={this.clearCanvas.bind(this)} />
+          </div>
+          <div className='centered'>
+            <ActionButton text='Random Art' onClick={this.randomArt.bind(this)} />
+          </div>
+          <div className='centered'>
+            <h3> Animation </h3>
+            <AnimatedCheckbox passBack={this.setAnimationState.bind(this)} />
+          </div>
+          <div className='centered'>
+            <h3>Randomness</h3>
+            <RandomnessSlider passBack={this.setRandomness.bind(this)} />
+          </div>
         </div>
         <ViewportShapeDropdown passBack={this.setViewport.bind(this)} />
         <div id='svg-area' className={this.state.viewport} >

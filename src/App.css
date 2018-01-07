@@ -43,6 +43,20 @@
   color: #444;
 }
 
+.topcontainer {
+  margin-top: 5%;
+  margin-left: 2%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.centered {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .shape-button {
   object-fit: contain;
   border-style: solid;
@@ -65,7 +79,7 @@
 
 .slider {
     -webkit-appearance: none;
-    width: 30%;
+    width: 40%;
     height: 15px;
     border-radius: 5px;
     background: black;
