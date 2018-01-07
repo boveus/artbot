@@ -8,7 +8,7 @@ This project is currently under construction.  It is in a working state as a pro
 
 ## Project Screen Shot:
 
-[insert screenshot here]
+<img width="1280" alt="screen shot 2018-01-07 at 2 53 55 pm" src="https://user-images.githubusercontent.com/20469703/34654700-b97546aa-f3bc-11e7-8c91-cecc6a71115c.png">
 
 ## Installation and Setup Instructions
 
