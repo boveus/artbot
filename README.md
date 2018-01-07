@@ -1,6 +1,6 @@
 Artbot
 
-An application used to filter data form Twitter based on user preference, built with React, Redux, JavaScript, and CSS.
+A way to easily generate random SVG graphics that are either static or animated.  
 
 ## Project Status
 
