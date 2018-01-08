@@ -1,4 +1,4 @@
-Artbot
+# Artbot
 
 A way to easily generate random SVG graphics that are either static or animated.  
 
