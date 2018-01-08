@@ -41,11 +41,13 @@ To contribute, simply clone down the repo, make some changes, and submit a PR.  
 ### Implement a way to save the static SVG to the local file system of a user
 Ideally, this would be a new button component that allows a user to click on it and save the SVG as a .png file.  I would love there to be some way for the animation to be captured as a .gif, but I don't think that is feasible.  Here are a few resources that may be helpful in implementing this feature.
 
-`https://stackoverflow.com/questions/27230293/how-to-convert-svg-to-png-using-html5-canvas-javascript-jquery-and-save-on-serve
+```
+https://stackoverflow.com/questions/27230293/how-to-convert-svg-to-png-using-html5-canvas-javascript-jquery-and-save-on-serve
 
 https://github.com/sampumon/SVG.toDataURL
 
-https://stackoverflow.com/questions/28226677/save-inline-svg-as-jpeg-png-svg`
+https://stackoverflow.com/questions/28226677/save-inline-svg-as-jpeg-png-svg
+```
 
 ### Implement a backend to allow users to submit art and have a gallery
 I would like to implement a backend that allows users to submit SVG art to a database or persistant data storage somewhere.  This would be some sort of database that allows the use of basic mahine learning techniques to modify the randomness and allow the front end to have different criteria it has enabled based on the art that has been submitted.  
