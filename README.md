@@ -2,6 +2,10 @@ Artbot
 
 A way to easily generate random SVG graphics that are either static or animated.  
 
+## Technology
+
+This project was created entirely in React, with some vanilla Javascript used for helper methods.  The initial iteration was created in jQuery (https://github.com/boveus/art_bot)[link], but the react version is easier to maintain.  
+
 ## Project Status
 
 This project is currently under construction.  It is in a working state as a proof of concept, but I would like to eventually add a backend to this project to allow users to save art they have generated.  Additionally, it would be good to allow users to undo art that was recently added, so that is another feature that is currently in the roadmap.
@@ -46,4 +50,6 @@ https://stackoverflow.com/questions/28226677/save-inline-svg-as-jpeg-png-svg
 `
 
 ### Implement a backend to allow users to submit art and have a gallery
-I would like to implement a backend that allows users to submit SVG art to a database or persistant data storage somewhere.  This would be some sort of database that allows the use of basic mahine learning techniques to modify the randomness and allow the front end to have different criteria it has enabled based on the art that has been submitted.  The first step of this would be a simple submission button and a gallery with the entire SVG saved in a small thumbnail.  For performance purposes, I think that the animations should be disabled on the thumbnails, but the users can click the art piece to see it on the full screen.  Users should also be able to submit a name with the art work and upvote/downvote other people's artwork to influence the bot's machine learning.
+I would like to implement a backend that allows users to submit SVG art to a database or persistant data storage somewhere.  This would be some sort of database that allows the use of basic mahine learning techniques to modify the randomness and allow the front end to have different criteria it has enabled based on the art that has been submitted.  
+
+The first step of this would be a simple submission button and a gallery with the entire SVG saved in a small thumbnail.  For performance purposes, I think that the animations should be disabled on the thumbnails, but the users can click the art piece to see it on the full screen.  Users should also be able to submit a name with the art work and upvote/downvote other people's artwork to influence the bot's machine learning.
