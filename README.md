@@ -4,7 +4,7 @@ A way to easily generate random SVG graphics that are either static or animated.
 
 ## Technology
 
-This project was created entirely in React, with some vanilla Javascript used for helper methods.  The initial iteration was created in [https://github.com/boveus/art_bot](jQuery), but the react version is easier to maintain.  
+This project was created entirely in React, with some vanilla Javascript used for helper methods.  The initial iteration was created in [jQuery](https://github.com/boveus/art_bot), but the react version is easier to maintain.  
 
 ## Project Status
 
